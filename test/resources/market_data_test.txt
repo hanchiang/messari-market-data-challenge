@@ -1,0 +1,6 @@
+BEGIN
+{"id": 1, "market": 1, "price": 10, "volume": 15, "is_buy": false}
+{"id": 2, "market": 1, "price": 20, "volume": 10, "is_buy": false}
+{"id": 3, "market": 2, "price": 5, "volume": 10, "is_buy": false}
+{"id": 4, "market": 1, "price": 25, "volume": 5, "is_buy": true}
+{"id": 5, "market": 2, "price": 20, "volume": 5, "is_buy": true}
