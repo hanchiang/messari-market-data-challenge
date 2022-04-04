@@ -65,6 +65,7 @@ func updateMarketMetric(metricByMarket map[int]*models.Metric, trade *models.Tra
 	newCount := metric.Count + 1
 	newVolume := metric.TotalVolume + trade.Volume
 
+	// The provided binary generates ~80% of the orders to be buy orders, instead of 20%
 	if trade.IsBuy {
 		metric.PercentBuyOrders = (metric.PercentBuyOrders*float32(metric.Count) + 1) / float32(newCount)
 	} else {
